@@ -30,6 +30,7 @@ beforeEach(async () => {
 afterAll(async () => {
   const deleted_user = await modelUser.deleteOne({ email: 'benny.daniel@gmail.com' });
   const deleted_category = await modelCat.deleteOne({ name: 'Squirrel' });
+  const deleted_pet = await Pet.deleteOne( { name: 'Gillu' });
 });
 
 describe("checking SuperAdmin", () => {
