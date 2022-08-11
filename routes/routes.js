@@ -26,5 +26,7 @@ module.exports = (app) => {
    
     router.delete("/pet/:id", pets.deletePet);
 
+    router.get("/categoryAll", pets.getCategoryOne);
+
     app.use('/api', router);
   };
