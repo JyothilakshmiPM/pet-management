@@ -97,3 +97,16 @@ var petSchema = new mongoose.Schema({
 
 module.exports = mongoose.model('pet', petSchema);
     
+var sampleSchema = new mongoose.Schema({
+    
+    name: {
+            type: String,
+            required: true
+    },
+    status: {
+            type: Number,
+            min: 0,
+            max: 1,
+            required: true
+    }
+});
